@@ -1,0 +1,9 @@
+[submodule "Dicionario-de-ruas/Plugin/Search"]
+	path = Dicionario-de-ruas/Plugin/Search
+	url = https://github.com/CakeDC/search.git
+[submodule "plugin/Search"]
+	path = plugin/Search
+	url = https://github.com/CakeDC/search.git
+[submodule "plugins/Search"]
+	path = plugins/Search
+	url = https://github.com/CakeDC/search.git

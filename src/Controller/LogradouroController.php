@@ -39,6 +39,13 @@ class LogradouroController extends AppController
 
         $this->set('logradouro', $logradouro);
         $this->set('_serialize', ['logradouro']);
+
+         // Controller do search!
+       if(isset($this->params['url']['search'])){  
+         echo 'search text has been found';
+        }
+
+
     }
 
     /**
@@ -108,4 +115,5 @@ class LogradouroController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+               
 }
