@@ -37,12 +37,28 @@ class AppController extends Controller
      *
      * @return void
      */
+    
+    
     public function initialize()
     {
         parent::initialize();
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+      /*  $this->loadComponent('Auth', [
+            'authenticate' => [
+            'Form' => [
+                'userModel' =>'Usuario',
+                'fields' => ['username' => 'RF']
+                      ]
+        ],
+        'loginAction' => [
+            'controller' => 'usuario',
+            'action' => 'login'
+        ],
+        'storage' => 'Session'
+    ]);*/
+     
     }
 
     /**
@@ -59,4 +75,5 @@ class AppController extends Controller
             $this->set('_serialize', true);
         }
     }
-}
+
+ }

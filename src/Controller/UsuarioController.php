@@ -108,4 +108,21 @@ class UsuarioController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    public function login()
+    {
+        if($this->request->is('post')) {
+            debug($this->request->data);
+
+            $user = $this->Auth->identify();
+            debug($user);
+            if($user){
+                $this->Auth->setUser($user);
+                return $this->redirect($this->Auth->redirectUrl(''));
+            }
+            else{
+                $this->Flash->error('Username or password is incorrect');
+            }
+        }
+
+    }
 }
