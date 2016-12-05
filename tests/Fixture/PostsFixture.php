@@ -13,9 +13,9 @@ namespace Search\Test\Fixture;
 use Cake\TestSuite\Fixture\TestFixture;
 
 /**
- * Article Fixture
+ * Post Fixture
  */
-class ArticlesFixture extends TestFixture {
+class PostsFixture extends TestFixture {
 
 /**
  * Fields
@@ -25,7 +25,6 @@ class ArticlesFixture extends TestFixture {
 	public $fields = array(
 		'id' => ['type' => 'integer'],
 		'title' => ['type' => 'string', 'null' => false],
-		'body' => ['type' => 'text', 'null' => false],
 		'slug' => ['type' => 'string', 'null' => false],
 		'views' => ['type' => 'integer', 'null' => false],
 		'comments' => ['type' => 'integer', 'null' => false, 'default' => '0', 'length' => 10],
@@ -40,16 +39,16 @@ class ArticlesFixture extends TestFixture {
  * @var array $records
  */
 	public $records = array(
-		array('title' => 'First Article', 'body' => 'First Article',
-			'slug' => 'first_article', 'views' => 2, 'comments' => 1,
+		array('title' => 'First Post',
+			'slug' => 'first_post', 'views' => 2, 'comments' => 1,
 			'created' => '2007-03-18 10:39:23', 'updated' => '2007-03-18 10:41:31'
 		),
-		array('title' => 'Second Article', 'body' => 'Second Article',
-			'slug' => 'second_article', 'views' => 1, 'comments' => 2,
+		array('title' => 'Second Post',
+			'slug' => 'second_post', 'views' => 1, 'comments' => 2,
 			'created' => '2007-03-18 10:41:23', 'updated' => '2007-03-18 10:43:31'
 		),
-		array('title' => 'Third Article', 'body' => 'Third Article',
-			'slug' => 'third_article', 'views' => 2, 'comments' => 3,
+		array('title' => 'Third Post',
+			'slug' => 'third_post', 'views' => 2, 'comments' => 3,
 			'created' => '2007-03-18 10:43:23', 'updated' => '2007-03-18 10:45:31'
 		),
 	);
