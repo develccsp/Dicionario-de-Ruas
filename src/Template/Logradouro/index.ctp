@@ -6,6 +6,7 @@
         <li><?= $this->Html->link(__('Sair'), ['action' => 'Logout']) ?></li>
     </ul>
 </nav>
+
 <div class="logradouro index large-9 medium-8 columns content">
     <h3><?= __('Logradouro') ?></h3>
     <div class="container">
@@ -49,6 +50,7 @@
     echo $this->Form->button('Pesquisa', array('class'=>'btn btn-success'));
     echo $this->Form->end
     ?>
+   
     </div>
     </div>
 </div>
