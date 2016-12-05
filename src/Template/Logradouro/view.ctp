@@ -91,4 +91,17 @@
         <h4><?= __('Tx Historico Logradouro') ?></h4>
         <?= $this->Text->autoParagraph(h($logradouro->tx_historico_logradouro)); ?>
     </div>
+
+
+
+
+
+
+
+ 
+
+
 </div>
+
+
+
