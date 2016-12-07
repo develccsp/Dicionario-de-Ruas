@@ -13,7 +13,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'Dicionário de Ruas';
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,7 +24,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $cakeDescription ?>:
         <?= $this->fetch('title') ?>
     </title>
-    <?= $this->Html->meta('icon') ?>
+    <?= $this->Html->meta('icon', 'img/monitor.png', array ('type'=>'icon')) ?>
 
     
     <?= $this->Html->css('base.css') ?>
@@ -36,12 +36,13 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 </head>
 <body>
     <nav class="top-bar expanded" data-topbar role="navigation">
+    <?= $this->Html->image('logo_prefeitura.gif', array('alt' => 'logo_prefeitura')); ?>
         <ul class="title-area large-3 medium-4 columns">
+            <?= $this->Html->image('logo_dicionario.png', array('alt' => 'logo_dicionario')); ?>
             <li class="name">
                 <h1><a href=""><?= $this->fetch('title') ?></a></h1>
             </li>
         </ul>
-        
     </nav>
     <?= $this->Flash->render() ?>
     <div class="container clearfix">

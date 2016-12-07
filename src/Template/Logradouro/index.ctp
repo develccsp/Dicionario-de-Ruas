@@ -74,7 +74,7 @@
             Número de Legislação
         </label></th>
     </table>
-
+   
     
     <a href='#'><div class="search-tab active_search_tab">Pesquisar Logradouro</div></a>
     <div class="col-md-12 purple search_box">
