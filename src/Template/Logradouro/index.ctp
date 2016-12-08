@@ -9,8 +9,7 @@
 
 <div class="logradouro index large-9 medium-8 columns content">
     <h3><?= __('Logradouro') ?></h3>
-<<<<<<< HEAD
-=======
+
     <div class="container">
     <a href='#'><div class="search-tab active_search_tab">Opções de pesquisas</div></a>
     <table cellpadding="0" cellspacing="0">
@@ -55,7 +54,7 @@
    
     </div>
     </div>
->>>>>>> remotes/origin/master
+
 </div>
 
 
