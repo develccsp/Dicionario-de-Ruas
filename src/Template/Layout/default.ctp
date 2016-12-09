@@ -36,7 +36,11 @@ $cakeDescription = 'Dicionário de Ruas';
 </head>
 <body>
     <nav class="top-bar expanded" data-topbar role="navigation">
+<<<<<<< HEAD
     <?= $this->Html->image('logo_prefeitura.gif', array('alt' => 'logo_prefeitura')); ?>
+=======
+    <?= $this->Html->image('logo_prefeitura1.png', array('alt' => 'logo_prefeitura')); ?>
+>>>>>>> remotes/origin/master
         <ul class="title-area large-3 medium-4 columns">
             <?= $this->Html->image('logo_dicionario.png', array('alt' => 'logo_dicionario')); ?>
             <li class="name">
