@@ -2,8 +2,8 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Ações') ?></li>
         <li><?= $this->Html->link(__('Novo registro'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('Manutenção'), ['action' => 'edit']) ?></li>
-        <li><?= $this->Html->link(__('Sair'), ['action' => 'Logout']) ?></li>
+        <li><?= $this->Html->link(__('Usuário'), ['action' => 'usuarioRed']) ?></li>
+        <li><?= $this->Html->link(__('Sair'), ['action' => 'logout']) ?></li>
     </ul>
 </nav>
 
@@ -15,33 +15,67 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-        <th><label for="CAD">
-          <input type="radio" name="radioPesquisa[]" value="5" id="CAD" />
-            CAD
+        <th><label for="CADLOG">
+          <input type="radio" name="radioPesquisa[]" value="1" id="CADLOG" />
+            CADLOG
         </label></th>
         <th><label for="RUA">
-          <input type="radio" name="radioPesquisa[]" value="5" id="RUA" />
-            RUA
+          <input type="radio" name="radioPesquisa[]" value="2" id="RUA" />
+            Rua
         </label></th>
         <th><label for="BAIRRO">
-          <input type="radio" name="radioPesquisa[]" value="5" id="BAIRRO" />
-            BAIRRO
+          <input type="radio" name="radioPesquisa[]" value="3" id="BAIRRO" />
+            Bairro
         </label></th>
         <th><label for="LEG">
-          <input type="radio" name="radioPesquisa[]" value="5" id="LEG" />
-            LEG
+          <input type="radio" name="radioPesquisa[]" value="4" id="LEG" />
+            Legislação
         </label></th>
         <th><label for="TIPO_LEG">
           <input type="radio" name="radioPesquisa[]" value="5" id="TIPO_LEG" />
-            TIPO_LEG
-        </label></th>
-        <th><label for="NM_ANTEIRO">
-          <input type="radio" name="radioPesquisa[]" value="5" id="NM_ANTEIRO" />
-            NM_ANTEIRO
+            Tipo Legislação
         </label></th>
          </thead>
+         <thead>
+          <th><label for="TIPO">
+          <input type="radio" name="radioPesquisa[]" value="7" id="TIPO" />
+            Tipo
+        </label></th>
+         <th><label for="DISTRITO">
+          <input type="radio" name="radioPesquisa[]" value="8" id="DISTRITO" />
+            Distrito
+        </label></th>
+         <th><label for="SUB_PF">
+          <input type="radio" name="radioPesquisa[]" value="9" id="SUB_PF" />
+            Subprefeitura
+        </label></th>
+         <th><label for="PROC">
+          <input type="radio" name="radioPesquisa[]" value="10" id="PROC" />
+            Processo
+        </label></th>
+         <th><label for="DATA_LEG">
+          <input type="radio" name="radioPesquisa[]" value="11" id="DATA_LEG" />
+            Data Legislação
+        </label></th>
+        </thead>
+         <th><label for="CLASS">
+          <input type="radio" name="radioPesquisa[]" value="13" id="CLASS" />
+            Classificação
+        </label></th>
+        <th><label for="LOC">
+          <input type="radio" name="radioPesquisa[]" value="12" id="LOC" />
+            Localização
+        </label></th>
+        <th><label for="NM_ANTERIOR">
+          <input type="radio" name="radioPesquisa[]" value="6" id="NM_ANTEIRO" />
+            Nome Anterior
+        </label></th>
+        <th><label for="NM_LEG">
+          <input type="radio" name="radioPesquisa[]" value="6" id="NM_LEG" />
+            Número de Legislação
+        </label></th>
     </table>
-
+   
     
     <a href='#'><div class="search-tab active_search_tab">Pesquisar Logradouro</div></a>
     <div class="col-md-12 purple search_box">

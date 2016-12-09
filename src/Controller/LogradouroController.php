@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use App\Controller\UsuarioController;
 
 /**
  * Logradouro Controller
@@ -115,5 +116,19 @@ class LogradouroController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    public function search(){
+        
+    }
+     public function usuarioRed(){
+
+        return $this->redirect(['controller' => 'usuario']);
+    }
+    public function logout(){
+        return $this->redirect(['controller'=>'usuario',
+            'action'=>'login']);
+    }
+
                
 }
+
+
