@@ -1,7 +1,7 @@
 <div class="large-6 center content">
  <?= $this->Form->create('Usuario') ?>
     <fieldset>
-    <div class="panel panel-default">
+    <div class="panel panel-default",>
     <h3>Login Dicionário de Ruas</h3>
     <div class="panel-body">
     <div class="content">

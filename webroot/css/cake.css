@@ -12,7 +12,8 @@ a {
 }
 
 .side-nav li a:not(.button) {
-    color: #15848F;
+    color: #fff;
+    border-bottom:1px solid rgba(255,255,255,.2);
 }
 
 .side-nav li a:not(.button):hover {
@@ -372,11 +373,13 @@ pre {
 }
 
 .top-bar.expanded .title-area {
-    background: #01545b;
+    background: #111111;
 }
 
 .top-bar.expanded, .top-bar,.top-bar-section ul li,.top-bar-section li:not(.has-form) a:not(.button) {
-    background: #116d76;
+    background: #111111;
+    border-bottom:2px solid rgba(255,255,255,.2);
+
 }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
@@ -385,15 +388,17 @@ pre {
 }
 
 .side-nav li.heading {
-    color: #1798A5;
+    color: #fff;
     font-size: 0.875rem;
     font-weight: bold;
     text-transform: uppercase;
     padding: 0.4375rem 0.875rem;
+    border-bottom:1px solid rgba(255,255,255,.2);
 }
 
 #actions-sidebar {
-    background: #fafafa;
+    background: #111111;
+
 }
 
 .index table {
@@ -457,7 +462,7 @@ fieldset legend {
 }
 
 button {
-    background: #966600;
+    background: #15848F;
 }
 
 div.message {
